@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+
+    <div class="form-group">
+        <p>Total number of tweets received: <label for="TotalCount" >@ViewBag.TotalCount</label>     
+                                            <a asp-action="GetTotalCount" asp-controller="Home" formmethod="get">Click to get toal Count</a>
+</p>
+
+        <p>Average tweets per minute: <label for="AverageTweetValue" >@ViewBag.AverageTweetValue</label>
+                                      <a asp-action="AverageNoOfTweets" asp-controller="Home">"Click to get average per minute" </a>
+        </p>
+
+    </div>
+</div>
